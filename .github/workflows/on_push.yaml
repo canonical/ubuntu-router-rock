@@ -9,6 +9,6 @@ jobs:
     uses: ./.github/workflows/build.yaml
 
   publish:
-    if: github.ref_name == 'main'
+#    if: github.ref_name == 'main'
     needs: build
     uses: ./.github/workflows/publish.yaml
